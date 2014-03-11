@@ -1,0 +1,4 @@
+production:
+  cgi_base_url: "http://example.com/cgi"
+staging:
+  cgi_base_url: "http://staging.example.com/cgi"
