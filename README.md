@@ -14,7 +14,7 @@ And then execute:
 
 ## Requirements
 
-* We need to install in our project the e-commerce Connection Kit (KCC) from Transbank
+* Install in your project the e-commerce Connection Kit (KCC) from Transbank
 * Follow the Transbank Webpay Integration manual to configure and set permissions to the directory tree and files.
 * Serve your CGI scripts in your Web server
 
