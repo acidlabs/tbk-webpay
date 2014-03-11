@@ -6,19 +6,32 @@ Ruby Implementation of Transbank Webpay Integration Kit
 
 Add this line to your application's Gemfile:
 
-    gem 'tbk-webpay'
+    gem 'tbk-webpay', git: 'git@github.com:acidlabs/tbk-webpay.git'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
-Or install it yourself as:
+## Requirements
 
-    $ gem install tbk-webpay
+* We need to install in our project the e-commerce Connection Kit (KCC) from Transbank
+* Follow the Transbank Webpay Integration manual to configure and set permissions to the directory tree and files.
+* Serve your CGI scripts in your Web server
 
 ## Usage
 
-TODO: Write usage instructions here
+Set CGI URL and root path in config/tbk-webpay.yml
+
+    production:
+      cgi_base_url: "http://example.com/cgi"
+      tbk_root_path: "/home/deploy/example.com/cgi"
+    staging:
+      cgi_base_url: "http://staging.example.com/cgi"
+      tbk_root_path: "/home/deploy/staging.example.com/cgi"
+
+Define private methods in Payment class, with your own application logic.
+
+Finally, you need to create success and failure controllers and their views according to your application logic and frontend design.
 
 ## Contributing
 
