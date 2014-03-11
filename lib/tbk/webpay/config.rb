@@ -3,7 +3,7 @@ require 'yaml'
 module TBK
   module Webpay
     class Config
-      attr_accessor :config_filepath, :tbk_webpay_cgi_base_url
+      attr_accessor :config_filepath, :tbk_webpay_cgi_base_url, :tbk_webpay_tbk_root_path
 
       # Public: Loads the configuration file puntopagos.yml
       # If it's a rails application it will take the file from the config/ directory
@@ -32,6 +32,7 @@ module TBK
       def load(rails_env)
         config = YAML.load_file(@config_filepath)[rails_env]
         @tbk_webpay_cgi_base_url = config['cgi_base_url']
+        @tbk_webpay_tbk_root_path = config['tbk_root_path']
       end
     end
   end
