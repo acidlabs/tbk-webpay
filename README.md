@@ -1,6 +1,6 @@
-# Tbk::Webpay
+# TBK::Webpay
 
-TODO: Write a gem description
+Ruby Implementation of Transbank Webpay Integration Kit
 
 ## Installation
 

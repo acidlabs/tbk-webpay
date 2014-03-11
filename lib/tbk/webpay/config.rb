@@ -24,7 +24,7 @@ module TBK
 
       private
 
-      # Public: Initialize variables based on puntopagos.yml
+      # Private: Initialize variables based on puntopagos.yml
       #
       # rails_env - Environment.
       #
